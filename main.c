@@ -2,12 +2,11 @@
 #include "arrayLibrary.h"
 
 int main(int argc, char **argv){
-    printf("Hello World!\n");
-
-    int arr[] = NULL;
+    int arr[10];
     for (int i = 0; i < 10; i++)
     {
-        /* code */
+        arr[i] = i;
+        printf("element %d: %d\n", i, arr[i]);
     }
     
 }

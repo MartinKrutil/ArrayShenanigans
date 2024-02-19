@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "arrayLibrary.h"
 
 void Reverse(int *arrayPtr[]){    
@@ -6,8 +7,8 @@ void Reverse(int *arrayPtr[]){
     printf("len: %d\n", length);
     for (int i = 0; i < length; i++)
     {
-        temp = *(arrayPtr + i);
-        *(arrayPtr + i) = *(arrayPtr + ((length - 1) - i));
-        *(arrayPtr + ((length - 1) - i)) = temp;           
+        temp = (int) *(arrayPtr + i);
+        *(arrayPtr + i) = (int) *(arrayPtr + ((length - 1) - i));
+        *(arrayPtr + ((length - 1) - i)) = (int) temp;           
     }
 }
