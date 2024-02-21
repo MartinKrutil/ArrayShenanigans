@@ -10,7 +10,7 @@ void PrintArray(int arr[], int len) {
 }
 
 void ReverseArray(int arr[], int len) {    
-    int temp = 0;
+    int temp;
     for (int i = 0; i < len / 2; i++) {
         temp = arr[i];
         arr[i] = arr[len - (i + 1)];

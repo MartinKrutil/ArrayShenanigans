@@ -1,23 +1,21 @@
 #include <stdio.h>
-#include <time.h>
 #include "arrayLibrary.h"
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv) {    
+    int len;
     printf("set array length: ");
-    int len = 0;
-
     scanf("%d", &len);
-    int arr[len];
 
+    int arr[len];
     for (int i = 0; i < len; i++) {        
         printf("set value of %d. element: ", i + 1);
         scanf("%d", &arr[i]);
     }
 
-    printf("\narr: ");
+    printf("arr: ");
     PrintArray(arr, len);
 
-    printf("\nrev: ");  
+    printf("\nrvs: ");  
     ReverseArray(arr, len);
     PrintArray(arr, len);
 
