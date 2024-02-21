@@ -2,13 +2,7 @@
 #include <time.h>
 #include "arrayLibrary.h"
 
-void ClearConsole() {
-    printf("\e[1;1H\e[2J");
-}
-
 int main(int argc, char **argv) {
-    ClearConsole();
-
     printf("set array length: ");
     int len = 0;
 
@@ -16,24 +10,20 @@ int main(int argc, char **argv) {
     int arr[len];
 
     for (int i = 0; i < len; i++) {        
-        ClearConsole();
-
         printf("set value of %d. element: ", i + 1);
         scanf("%d", &arr[i]);
     }
 
-    ClearConsole();
-
-    printf("arr: ");
+    printf("\narr: ");
     PrintArray(arr, len);
 
-    printf("rev: ");  
+    printf("\nrev: ");  
     ReverseArray(arr, len);
     PrintArray(arr, len);
 
     int max = GetMax(arr, len);
-    printf("max: %d\n", max);
+    printf("\nmax: %d", max);
 
     int min = GetMin(arr, len);
-    printf("min: %d\n", min);
+    printf("\nmin: %d", min);
 }

@@ -6,7 +6,7 @@ void PrintArray(int arr[], int len) {
     for (int i = 1; i < len - 1; i++)
         printf(", %d", arr[i]);
 
-    printf(", %d]\n", arr[len - 1]);
+    printf(", %d]", arr[len - 1]);
 }
 
 void ReverseArray(int arr[], int len) {    
@@ -34,4 +34,3 @@ int GetMin(int arr[], int len) {
 
     return min;
 }
-
