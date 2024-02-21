@@ -4,8 +4,8 @@ Demonstration of simple array functions in C.
 
 ### Funcions
 
-```C 
-//Prints out an array as [1, 2, 3
+```C
+//Prints out an array as [1, 2, 3]
 void PrintArray(int arr[], int len)
 ```
 
