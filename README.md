@@ -5,7 +5,7 @@ Demonstration of simple array functions in C.
 ### Funcions
 
 ```C
-//Prints out an array as [1, 2, 3]
+//Prints out an array as [0, 1, 2]
 void PrintArray(int arr[], int len)
 ```
 
